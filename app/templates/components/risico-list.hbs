@@ -1,0 +1,6 @@
+<label class="{{risico.category}}" for="{{risico.name}}">{{risico.label}}</label>
+<select class="{{risico.category}}" id="{{risico.name}}" name="{{risico.name}}" onchange={{action "doSomething"}}>
+  {{#each risico.value as |value|}}
+    <option>{{value}}</option>
+  {{/each}}
+</select>

@@ -1,5 +1,29 @@
-{{!-- The following component displays Ember's default welcome message. --}}
-{{welcome-page}}
-{{!-- Feel free to remove this! --}}
 
-{{outlet}}
+<nav>
+  <ul>
+    <li>
+      {{#link-to "risicos" class="menu-risicos"}}
+        Risico Analyse
+      {{/link-to}}
+    </li>
+    <li>
+      {{#link-to "index"}}
+        Intro
+      {{/link-to}}
+    </li>
+    <li>
+      {{#link-to "over" class="menu-over"}}
+        Over
+      {{/link-to}}
+    </li>
+    <li>
+      {{#link-to "contact" class="menu-contact"}}
+        Contact
+      {{/link-to}}
+    </li>
+  </ul>
+</nav>
+
+<div class="container">
+  {{outlet}}
+</div>

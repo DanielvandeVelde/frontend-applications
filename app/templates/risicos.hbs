@@ -1,0 +1,12 @@
+{{#risico-filter
+  filter=(action 'filterByLabel')
+  as |filteredResults|}}
+  <form>
+    {{#each filteredResults as |risicoFactor|}}
+      {{risico-list risico=risicoFactor}}
+    {{/each}}
+    <button type="reset">Schoon</button>
+  </form>
+{{/risico-filter}}
+
+{{outlet}}
