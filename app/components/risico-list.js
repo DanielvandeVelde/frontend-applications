@@ -10,6 +10,8 @@ var indexValue = event.target.selectedIndex
 var array = event.target.dataset.attribute.split(",");
 var waarde = array[indexValue-1];
 var selectId = event.target.name;
+var calcValue = 0;
+var check = true;
 
 if (localStorage.length != 0) {
   var selectedOptions = JSON.parse(localStorage.getItem('selectedOptions'))
@@ -33,8 +35,6 @@ function putValues(i) {
   selectedOptions.value[i] = waarde
 }
 
-var check = true
-
 if (selectedOptions.id.length == 0) {
   pushValues()
 } else {
@@ -52,8 +52,11 @@ if (selectedOptions.id.length == 0) {
 
 localStorage.setItem('selectedOptions', JSON.stringify(selectedOptions))
 
-console.log(JSON.stringify(selectedOptions))
-risk.textContent = waarde + "%";
+for (var i = 0; i < selectedOptions.value.length; i++ ) {
+calcValue += Number(selectedOptions.value[i]);
+}
+
+risk.textContent = calcValue + "%";
 
 }
 }
