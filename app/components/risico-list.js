@@ -65,10 +65,9 @@ export default Component.extend({
       );
 
       risk.textContent = realValue + "%";
-      console.log(getColor(realValue / 100));
-      risk.style.color = getColor(realValue / 100);
 
       /* from: https://stackoverflow.com/questions/7128675/from-green-to-red-color-depend-on-percentage */
+      risk.style.color = getColor(realValue / 100);
       function getColor(value) {
         //value from 0 to 1
         var hue = ((1 - value) * 120).toString(10);

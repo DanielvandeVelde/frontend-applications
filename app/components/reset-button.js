@@ -12,7 +12,8 @@ export default Component.extend({
         selects[i].selectedIndex = 0;
       }
 
-      risk.textContent = 0;
+      risk.textContent = 0 + "%";
+      risk.style.color = rgb(0, 255, 0);
     }
   }
 });
