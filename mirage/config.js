@@ -10,7 +10,7 @@ export default function() {
         category: "algemeen",
         name: "geslacht",
           value: ["Man", "Vrouw"],
-          weight: ["-200", "-300"]
+          weight: ["1", "2"]
       }
     },
     {
@@ -27,7 +27,7 @@ export default function() {
             "12-16 jaar",
             "16-18 jaar"
           ],
-          weight: ["-200", "-300", "-400", "-500", "-600"]
+          weight: ["2", "2", "2", "1", "4"]
       }
     },
     {
@@ -45,7 +45,7 @@ export default function() {
             "35-40 jaar",
             "40 jaar of ouder"
           ],
-          weight: ["-200", "-300", "-400", "-500", "-600", "-700"]
+          weight: ["1", "-1", "-3", "-4", "-5", "-5"]
       }
     },
     {
@@ -63,7 +63,7 @@ export default function() {
             "35-40 jaar",
             "40 jaar of ouder"
           ],
-          weight: ["-200", "-300", "-400", "-500", "-600", "-700"]
+          weight: ["-2", "-1", "-2", "-1", "-1", "-1"]
 
       }
     },
@@ -75,7 +75,7 @@ export default function() {
         category: "algemeen",
         name: "leeftijdVerschil",
           value: ["Minder dan 5 jaar", "Meer dan 5 jaar"],
-          weight: ["-200", "-300"]
+          weight: ["3", "3"]
       }
     },
     {
@@ -90,7 +90,7 @@ export default function() {
             "Beide ouders niet Nederlands",
             "Een van de ouders niet Nederlands"
           ],
-          weight: ["-200", "-300", "-400"]
+          weight: ["3", "3", "3"]
       }
     },
     {
@@ -104,7 +104,7 @@ export default function() {
             "Geen jeugdhulp zonder verblijf",
             "Jeugdhulp zonder verblijf gehad"
           ],
-          weight: ["-200", "-300"]
+          weight: ["1", "1"]
 
       }
     }

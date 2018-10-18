@@ -13,6 +13,9 @@ var selectId = event.target.name;
 var calcValue = 0;
 var check = true;
 
+
+/* Code made with Jeroen van Berkum */
+
 if (localStorage.length != 0) {
   var selectedOptions = JSON.parse(localStorage.getItem('selectedOptions'))
 } else {
@@ -52,11 +55,15 @@ if (selectedOptions.id.length == 0) {
 
 localStorage.setItem('selectedOptions', JSON.stringify(selectedOptions))
 
+/* End of colab */
+
 for (var i = 0; i < selectedOptions.value.length; i++ ) {
 calcValue += Number(selectedOptions.value[i]);
 }
 
-risk.textContent = calcValue + "%";
+var realValue = Number( ( 1 / ( 1 + Math.exp( -1 * ( -8.57219 + calcValue ) ) ) * 100 ).toFixed( 10 ) );
+
+risk.textContent = realValue + "%";
 
 }
 }
