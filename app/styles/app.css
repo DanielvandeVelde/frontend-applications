@@ -103,11 +103,11 @@ margin: 5rem auto;
 padding: 3rem;
 background-color: white;
 border-radius: .5rem;
+display: flex;
 }
 
-.container input {
-  width: 35rem;
-  margin: 0 3rem;
+.container form input {
+  width: 100%;
   height: 2rem;
   text-indent: 2rem;
 }
@@ -121,13 +121,13 @@ form label {
   text-transform: uppercase;
   color: darkgrey;
   font-size: 1rem;
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 0;
 }
 
 form select {
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 0;
 }
 
 form button {
-  margin: 0.5rem 2rem;
+  margin: 0.5rem 0;
 }
