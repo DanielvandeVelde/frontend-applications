@@ -5,9 +5,6 @@
     {{#each filteredResults as |risicoFactor|}}
       {{risico-list risico=risicoFactor}}
     {{/each}}
-    {{reset-button
-      text="Reset"
-    }}
   </form>
 {{/risico-filter}}
 
@@ -15,6 +12,9 @@
   <h2></h2>
   <span id="risk">-</span>
   <p>Dit is een indicatie en dat soort dingen.</p>
+  {{reset-button
+    text="Reset"
+  }}
 </aside>
 
 {{outlet}}

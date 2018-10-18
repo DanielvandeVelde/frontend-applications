@@ -9,8 +9,8 @@ export default function() {
         label: "Geslacht",
         category: "algemeen",
         name: "geslacht",
-          value: ["Man", "Vrouw"],
-          weight: ["1", "2"]
+        value: ["Man", "Vrouw"],
+        weight: ["1", "2"]
       }
     },
     {
@@ -20,14 +20,14 @@ export default function() {
         label: "Leeftijd van het kind",
         category: "algemeen",
         name: "leeftijdKind",
-          value: [
-            "0-4 jaar",
-            "4-8 jaar",
-            "8-12 jaar",
-            "12-16 jaar",
-            "16-18 jaar"
-          ],
-          weight: ["2", "2", "2", "1", "4"]
+        value: [
+          "0-4 jaar",
+          "4-8 jaar",
+          "8-12 jaar",
+          "12-16 jaar",
+          "16-18 jaar"
+        ],
+        weight: ["2", "2", "2", "1", "4"]
       }
     },
     {
@@ -37,15 +37,15 @@ export default function() {
         label: "leeftijd van de vader bij geboorte",
         category: "algemeen",
         name: "leeftijdVader",
-          value: [
-            "Jonger dan 20 jaar",
-            "20-25 jaar",
-            "25-30 jaar",
-            "30-35 jaar",
-            "35-40 jaar",
-            "40 jaar of ouder"
-          ],
-          weight: ["1", "-1", "-3", "-4", "-5", "-5"]
+        value: [
+          "Jonger dan 20 jaar",
+          "20-25 jaar",
+          "25-30 jaar",
+          "30-35 jaar",
+          "35-40 jaar",
+          "40 jaar of ouder"
+        ],
+        weight: ["1", "-1", "-3", "-4", "-5", "-5"]
       }
     },
     {
@@ -55,16 +55,15 @@ export default function() {
         label: "leeftijd van de moeder bij geboorte",
         category: "algemeen",
         name: "leeftijdMoeder",
-          value: [
-            "Jonger dan 20 jaar",
-            "20-25 jaar",
-            "25-30 jaar",
-            "30-35 jaar",
-            "35-40 jaar",
-            "40 jaar of ouder"
-          ],
-          weight: ["-2", "-1", "-2", "-1", "-1", "-1"]
-
+        value: [
+          "Jonger dan 20 jaar",
+          "20-25 jaar",
+          "25-30 jaar",
+          "30-35 jaar",
+          "35-40 jaar",
+          "40 jaar of ouder"
+        ],
+        weight: ["-2", "-1", "-2", "-1", "-1", "-1"]
       }
     },
     {
@@ -74,8 +73,8 @@ export default function() {
         label: "Leeftijd verschil tussen ouders",
         category: "algemeen",
         name: "leeftijdVerschil",
-          value: ["Minder dan 5 jaar", "Meer dan 5 jaar"],
-          weight: ["3", "3"]
+        value: ["Minder dan 5 jaar", "Meer dan 5 jaar"],
+        weight: ["3", "3"]
       }
     },
     {
@@ -85,12 +84,12 @@ export default function() {
         label: "Herkomst ouders",
         category: "algemeen",
         name: "herkomstOuders",
-          value: [
-            "Beide ouders Nederlands",
-            "Beide ouders niet Nederlands",
-            "Een van de ouders niet Nederlands"
-          ],
-          weight: ["3", "3", "3"]
+        value: [
+          "Beide ouders Nederlands",
+          "Beide ouders niet Nederlands",
+          "Een van de ouders niet Nederlands"
+        ],
+        weight: ["3", "3", "3"]
       }
     },
     {
@@ -100,12 +99,11 @@ export default function() {
         label: "Hulptraject",
         category: "algemeen",
         name: "hulptraject",
-          value: [
-            "Geen jeugdhulp zonder verblijf",
-            "Jeugdhulp zonder verblijf gehad"
-          ],
-          weight: ["1", "1"]
-
+        value: [
+          "Geen jeugdhulp zonder verblijf",
+          "Jeugdhulp zonder verblijf gehad"
+        ],
+        weight: ["1", "1"]
       }
     }
   ];
