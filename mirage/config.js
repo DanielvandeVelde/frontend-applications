@@ -105,6 +105,105 @@ export default function() {
         ],
         weight: ["1", "1"]
       }
+    },
+    {
+      type: "risicos",
+      id: "7",
+      attributes: {
+        label: "Huishouden",
+        category: "algemeen",
+        name: "huishouden",
+        value: [
+          "Eenouderhuishouden",
+          "Eenperoonshuishouden",
+          "Gehuwd paar zonder kinderen",
+          "Institutioneel huishouden",
+          "Niet-gehuwd paar zonder kinderen",
+          "Niet-gehuwd paar met kinderen",
+          "Onbekend huishouden",
+          "Overig huishouden"
+        ],
+        weight: ["1", "1", "2", "4", "-5", "-7", "0", "-10"]
+      }
+    },
+    {
+      type: "risicos",
+      id: "8",
+      attributes: {
+        label: "Scheiding",
+        category: "algemeen",
+        name: "scheiding",
+        value: ["Gescheiden ouders", "Ouders bij elkaar"],
+        weight: ["10", "-10"]
+      }
+    },
+    {
+      type: "risicos",
+      id: "9",
+      attributes: {
+        label: "Voortijdig schoolverlaten",
+        category: "algemeen",
+        name: "voortijdig",
+        value: [
+          "Voortijdig schoolverlater",
+          "Uit onderwijs met startkwalificatie",
+          "Onbekend",
+          "Niet van toepassing"
+        ],
+        weight: ["10", "5", "0", "-5"]
+      }
+    },
+    {
+      type: "risicos",
+      id: "10",
+      attributes: {
+        label: "Speciaal onderwijs",
+        category: "algemeen",
+        name: "speciaalOnderwijs",
+        value: [
+          "Onderwijs onbekend",
+          "Niet-regulier onderwijs",
+          "Regulier onderwijs"
+        ],
+        weight: ["10", "5", "0"]
+      }
+    },
+    {
+      type: "risicos",
+      id: "11",
+      attributes: {
+        label: "Soort woning",
+        category: "algemeen",
+        name: "woning",
+        value: [
+          "Huurwoning met huurtoeslag",
+          "Huurwoning zonder huurtoeslag",
+          "Onbekend"
+        ],
+        weight: ["10", "5", "0"]
+      }
+    },
+    {
+      type: "risicos",
+      id: "12",
+      attributes: {
+        label: "Werk vader",
+        category: "algemeen",
+        name: "werkVader",
+        value: ["Geen werk en niet actief", "Onbekend", "Werk"],
+        weight: ["10", "5", "0"]
+      }
+    },
+    {
+      type: "risicos",
+      id: "13",
+      attributes: {
+        label: "Werk moeder",
+        category: "algemeen",
+        name: "werkMoeder",
+        value: ["Geen werk en niet actief", "Onbekend", "Werk"],
+        weight: ["10", "5", "0"]
+      }
     }
   ];
 

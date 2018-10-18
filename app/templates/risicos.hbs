@@ -2,6 +2,7 @@
   filter=(action 'filterByLabel')
   as |filteredResults|}}
   <form>
+    <h2>Risico analyse formulier</h2>
     {{#each filteredResults as |risicoFactor|}}
       {{risico-list risico=risicoFactor}}
     {{/each}}
@@ -9,11 +10,18 @@
 {{/risico-filter}}
 
 <aside>
-  <h2></h2>
-  <span id="risk">-</span>
-  <p>Dit is een indicatie en dat soort dingen.</p>
+  <h2>Risicopercentage</h2>
+  <span id="risk">0%</span>
+  <p>
+  0 - 2%: Laag risico<br>
+  2 - 5%: Middelmatig risico<br>
+  5% en hoger: Hoog risico<br>
+  <br>
+  Dit is een slechts een indicatie.<br>
+  Vul alle velden in voor een betere analyse.
+  </p>
   {{reset-button
-    text="Reset"
+    text="Reset formulier"
   }}
 </aside>
 
