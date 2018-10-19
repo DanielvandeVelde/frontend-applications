@@ -7,7 +7,6 @@ export default Component.extend({
       var indexValue = event.target.selectedIndex;
       var array = event.target.dataset.attribute.split(",");
       var waarde = array[indexValue - 1];
-      var selectId = event.target.name;
       var calcValue = 0;
       var check = true;
 

@@ -15,8 +15,9 @@ export default Component.extend({
         var selectedOptions = JSON.parse(
           localStorage.getItem("selectedOptions")
         );
+        var i = 0;
 
-        for (var i = 0; i < selects.length; i++) {
+        for (i = 0; i < selects.length; i++) {
           for (var j = 0; j < selects.length; j++) {
             if (selectedOptions.id[i] == selects[j].id) {
               selects[j].selectedIndex = selectedOptions.index[i];
@@ -24,7 +25,7 @@ export default Component.extend({
           }
         }
 
-        for (var i = 0; i < selectedOptions.value.length; i++) {
+        for (i = 0; i < selectedOptions.value.length; i++) {
           calcValue += Number(selectedOptions.value[i]);
         }
 
@@ -55,11 +56,12 @@ export default Component.extend({
             var selects = document.querySelectorAll("select");
             var risk = document.getElementById("risk");
             var calcValue = 0;
+            var i = 0;
             var selectedOptions = JSON.parse(
               localStorage.getItem("selectedOptions")
             );
 
-            for (var i = 0; i < selects.length; i++) {
+            for (i = 0; i < selects.length; i++) {
               for (var j = 0; j < selects.length; j++) {
                 if (selectedOptions.id[i] == selects[j].id) {
                   selects[j].selectedIndex = selectedOptions.index[i];
@@ -67,7 +69,7 @@ export default Component.extend({
               }
             }
 
-            for (var i = 0; i < selectedOptions.value.length; i++) {
+            for (i = 0; i < selectedOptions.value.length; i++) {
               calcValue += Number(selectedOptions.value[i]);
             }
 

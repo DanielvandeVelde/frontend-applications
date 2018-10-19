@@ -13,7 +13,7 @@ export default Component.extend({
       }
 
       risk.textContent = 0 + "%";
-      risk.style.color = rgb(0, 255, 0);
+      risk.style.color = hsl("0,100%,50%");
     }
   }
 });
