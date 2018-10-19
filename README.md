@@ -1,6 +1,6 @@
 # Risk analysis
 
-!(https://raw.githubusercontent.com/DanielvandeVelde/Frontend-Applications/master/image.png)
+![Preview](https://raw.githubusercontent.com/DanielvandeVelde/Frontend-Applications/master/image.png)
 
 "Risico analyse" is a web application written in the framework [Ember](https://ember-cli,com/). This is made for Garage 2020, a Dutch company that collects data and creates datasets. This application is made to calculate and analyze this data to create an number/percentage that can be used as an impartial view on the situation. These outcomes can be an indication for them to intervene with the case that they are working on at that moment. The page saves itself in the local storage so nothing is lost on refresh/browsing and of course deletes the information on form reset.
 
