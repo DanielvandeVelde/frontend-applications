@@ -8,6 +8,19 @@ A big form. The form dynamically creates itself from a database/json file. It al
 
 ## Process
 
+I started this project not knowing anything about Ember. After following the [Ember Quick Start Guide](https://guides.emberjs.com/release/getting-started/quick-start/) I learned how to create an application, about routes, components and how to deploy the [app](https://righteous-dinosaurs.surge.sh/scientists).
+
+With my recently gained knowledge I started by reading more about the models, components, controllers, routing and all that. This gave me some confidence in starting the actual application.
+
+I started with dynamically creating the form from a JSON-file, which turned out to be rather easy. After that I used Mirage to fake api/db calls. This was well documented on their [website](https://ember-cli-mirage.com/).
+Making the searchbar was not as difficult as I expected thanks to the Ember Tutorial I did earlier on. It still took a full day to get both these components up and running.
+
+Putting all the data in the localStorage and retrieving it turned out to be quite a bit more difficult. The searchbar made it so I had to filter and then retrieve the data every single time. This took me more than a day with adding a component for the reset button as well.
+
+Calculating the riskpercentage after that was quite easy since everything was already in place for getting the localdata, I just had to calculate with that as soon as it was retrieved.
+
+There's a lot of temporary/ugly solutions to a couple of problems that I wish I had time to fix such as duplicate functions and a timeout for retrieving the data from Mirage.
+
 ## TODO
 
 - [x] Gather data from api/db
@@ -54,6 +67,7 @@ You will need the following things properly installed on your computer.
 ### Deploying
 
 * Make sure you configure your requests to not use Mirage
+* Maybe an Apache server
 
 ## Further Reading / Useful Links
 
